@@ -3,7 +3,7 @@ Projeto apenas para fins de estudos :)
 
 ![Print](www/assets/images/print1.jpeg)
 
-**Packages:**
+**Packages:**<br>
 Instale as bibliotecas necessárias:
 
 ```r
@@ -15,7 +15,7 @@ install.packages("DT")
 install.packages("ggplot2")
 ```
 
-**Variáveis de ambiente (.env):**
+**Variáveis de ambiente (.env):**<br>
 Crie um arquivo .env e inclua as seguintes variáveis relacionadas ao projeto REDCap:
 
 ```env
