@@ -1,0 +1,46 @@
+#total_records {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #BB86FC;
+    text-align: center;
+}
+
+body{
+    background-color: #121212;
+    margin: 20px;
+}
+
+*{
+    color: #E1E1E1;
+}
+
+.well{
+    background-color: #1E1E1E!important;
+    border: none;
+}
+
+.datatables{
+    background-color: #1E1E1E!important;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.irs-bar, .irs-to, .irs-from{
+    background-color: #BB86FC!important;
+    border: #BB86FC 1px solid!important;
+}
+
+.selectize-input, .option {
+    background-color: #121212!important;
+}
+
+.reset{
+    width: 100%; 
+    height: 50px; 
+    font-size: 20px; 
+    margin-top: 20px;
+    background-color:#E1E1E1;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+}
