@@ -44,8 +44,7 @@ ui <- fluidPage(
                         h3("DataSet Analisado"), 
                         dataTableOutput("data_preview")
                     )
-                ),
-                textOutput("total_records")       
+                )   
             )
         )
     )
@@ -123,7 +122,7 @@ server <- function(input, output, session) {
                     axis.text.x = element_text(color = "#E1E1E1", size = 13),  
                     axis.text.y = element_text(color = "#E1E1E1", size = 13 ),
                     panel.background = element_rect(fill = "#1E1E1E"),  
-                    plot.background = element_rect(fill = "#1E1E1E", color = "black") 
+                    plot.background = element_rect(fill = "#1E1E1E", color = "#1E1E1E") 
                 )
         }
     })
@@ -139,13 +138,6 @@ server <- function(input, output, session) {
                 )
             )
         )
-    })
-
-    # MOSTRA TOTAL DE REGISTROS
-    output$total_records <- renderText({
-        data <- filtered_data()
-        total <- nrow(data)
-        paste("Total de Registros:", total) 
     })
 
     # REINICIA OS FILTROS QUANDO O BOTÃO FOR CLICADO
