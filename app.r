@@ -79,8 +79,8 @@ server <- function(input, output, session) {
         data <- data[, c("full_name", "birth_date", "age", "gender")]
 
         # TRATA A DATA DE NASCIMENTO (DD/MM/YYYY)
-        data$birth_date <- as.Date(data$birth_date, format = "%Y-%m-%d")  # Garantir que a data está no formato correto
-        data$birth_date <- format(data$birth_date, "%d/%m/%Y")  # Converter para o formato DD/MM/YYYY
+        data$birth_date <- as.Date(data$birth_date, format = "%Y-%m-%d") 
+        data$birth_date <- format(data$birth_date, "%d/%m/%Y") 
 
         # TRATA O CAMPO GENDER 0/1 PARA "Feminino" E "Masculino"
         data$gender <- ifelse(data$gender == 0, "Feminino", "Masculino")
