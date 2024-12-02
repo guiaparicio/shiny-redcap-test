@@ -19,8 +19,9 @@ install.packages("ggplot2")
 Crie um arquivo .env e inclua as seguintes variáveis relacionadas ao projeto REDCap:
 
 ```env
-[REDCAP Configuration]
 REDCAP_API_URL = 
 REDCAP_API_KEY = 
 
 ```
+
+Obs: Importante manter uma linha em branco no final do arquivo .env
